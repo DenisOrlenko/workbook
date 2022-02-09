@@ -219,26 +219,13 @@ a .accent.black {
 
 /* ---------------------HERO----------------------- */
 /* фон Героя */
-.solutions {
-  margin-bottom: 94px;
-  background-color: var(--footer-bg-color);
-}
-
-.solutions .container {
+.hero {
   display: flex;
   min-height: 600px;
   flex-direction: column;
-  justify-content: center;
-}
-
-/* Центрирование - HERO, BUTTON */
-.hero {
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
-
-  /* background-image: url('../images/png/hero-overlay\ \(1\).png'), url('../images/hero\ \(1\).jpg'); */
-
-  /* background-color: rgba(47, 48, 58, 0.4);
-  background-image: url('../images/hero\ \(1\).jpg'); */
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero\ \(1\).jpg');
@@ -247,6 +234,20 @@ a .accent.black {
   background-position: center;
   max-width: 1600px;
   min-height: 600px;
+}
+
+/* 2 способ подключения */
+/* background-image:
+  url('../images/png/hero-overlay\ \(1\).png'),
+  url('../images/hero\ \(1\).jpg'); */
+
+/* 3 способ подключения */
+/* background-color: rgba(47, 48, 58, 0.4);
+  background-image: url('../images/hero\ \(1\).jpg'); */
+
+.hero .container {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 /* h1 Задается цвет заголовку Героя */
@@ -305,6 +306,9 @@ a .accent.black {
 
 .feature-list .item {
   flex-basis: calc(100% - 4 * var(--list-gap) / 4);
+
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-list .item + .item {
@@ -325,17 +329,55 @@ a .accent.black {
   line-height: 1.71;
 }
 
-.antenna {
+/* .antenna {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .feature-list .antenna::before {
   content: '';
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background-image: url('../images/png/antenna\ 1.png'), url('../images/png/Rectangle.png');
+  /* background-image: url('../images/png/antenna\ 1.png'), url('../images/png/Rectangle.png'); */
+  background-image: url('../images/png/antenna\ 1.png');
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.feature-list .clock::before {
+  content: '';
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-image: url('../images/png/clock\ 1.png'), url('../images/png/Rectangle.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.feature-list .diagram::before {
+  content: '';
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-image: url('../images/png/diagram\ 1.png'), url('../images/png/Rectangle.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.feature-list .astronaut::before {
+  content: '';
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-image: url('../images/png/astronaut\ 1.png'), url('../images/png/Rectangle.png');
   background-repeat: no-repeat;
   background-position: center;
   padding: 25px 100px;
@@ -354,37 +396,67 @@ a .accent.black {
 }
 
 .item > img {
+  display: block;
   max-width: 100%;
 }
 
 /* --------------------SECTION-4------------------- */
-/* фон к section */
-.masters {
-  background-color: var(--secondary-bg-color);
-}
 
 /* -----------------team---------------- */
-.team-list img {
-  margin-bottom: 30px;
-  max-width: 100%;
+
+.social-links .link + .link {
+  margin-left: 10px;
 }
 
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--list-gap));
-}
-
-.team-list > .item {
-  flex-basis: calc(100% / 4 - var(--list-gap));
-  margin-left: var(--list-gap);
-
-  box-shadow: var(--shadow);
-  border-radius: 0px 0px 4px 4px;
+.social-links .link {
+  display: block;
 }
 
 .team-list-content {
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.item .item-card {
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+.social-links > .link-1::after {
+  display: block;
+  content: '';
+  width: 44px;
+  height: 44px;
+  background-image: url('../images/png/Ellipse-1.png');
+}
+
+.social-links > .link-2::after {
+  display: block;
+  content: '';
+  width: 44px;
+  height: 44px;
+  background-image: url('../images/png/Ellipse-2.png');
+}
+
+.social-links > .link-3::after {
+  display: block;
+  content: '';
+  width: 44px;
+  height: 44px;
+  background-image: url('../images/png/Ellipse-3.png');
+}
+
+.social-links > .link-4::after {
+  display: block;
+  content: '';
+  width: 44px;
+  height: 44px;
+  background-image: url('../images/png/Ellipse-4.png');
 }
 
 /* h3 оформление -2 */
@@ -400,6 +472,30 @@ a .accent.black {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+
+  margin-bottom: 16px;
+}
+
+.team-list > .item {
+  flex-basis: calc(100% / 4 - var(--list-gap));
+  margin-left: var(--list-gap);
+
+  box-shadow: var(--shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list {
+  display: flex;
+  margin-left: calc(-1 * var(--list-gap));
+}
+
+/* ----------------Clients-------------------- */
+.clients-list {
+  display: flex;
+}
+
+.clients-list .clients-item + .clients-item {
+  margin-left: 30px;
 }
 
 /* -----------------------ФУТЕР---------------- */
