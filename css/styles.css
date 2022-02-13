@@ -222,18 +222,17 @@ a .accent.black {
 .hero {
   display: flex;
   min-height: 600px;
+  max-width: 1600px;
   flex-direction: column;
+  justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero\ \(1\).jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1600px;
-  min-height: 600px;
 }
 
 /* 2 способ подключения */
@@ -267,7 +266,7 @@ a .accent.black {
 
 /* button применение формления к кнопке */
 .hero .hero-button {
-  display: inline-block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
