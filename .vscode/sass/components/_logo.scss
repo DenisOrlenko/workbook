@@ -1,0 +1,38 @@
+/* .logo-web */
+.logo {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  // margin-left: auto;
+  //   margin-right: auto;
+
+  // @media screen and (max-width:768px) {
+  //   .menu-container.is-open .logo {
+  //     display: none;
+  //   }
+
+  //   .menu-container.is-hidden .logo {
+  //     display: block;
+  //   }
+  // }
+}
+
+/* WebStudio - черный цвет */
+.logo__studio--accent-black {
+  color: var(--logo-black-color);
+}
+
+/* WebStudio - белый цвет */
+.logo__studio--accent-white {
+  color: var(--secondary-text-color);
+}
+

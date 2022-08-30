@@ -1,0 +1,50 @@
+/* socials */
+.social-footer-title {
+  margin-bottom: 20px;
+
+  color: var(--secondary-bg-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width:1200px) {
+    text-align: start;
+  }
+}
+
+.social-footer-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width:1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.social-footer-item + .social-footer-item {
+  margin-left: 10px;
+}
+
+.social-footer-item__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  fill: var(--secondary-text-color);
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}

@@ -1,0 +1,105 @@
+/* Contact */
+.page-header .contact {
+    @media screen and (max-width:767px) {
+      display: none;
+    }
+}
+
+.contact {
+  @media screen and (max-width:767px) {
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    margin-left: 84px;
+    // flex-direction: column;
+  }
+
+  @media screen and (min-width:1200px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: 305px;
+    align-items: center;
+  }
+}
+
+.contact__item + .contact__item {
+  @media screen and (min-width:1200px) {
+    margin-left: 30px;
+  }
+}
+
+.contact__item {
+  @media screen and (max-width:767px) {
+    &:first-child {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+/* задается цвет списку контактов в шапке */
+.contact__link {
+  display: flex;
+  align-items: center;
+
+  // padding-top: 21px;
+  // padding-bottom: 21px;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* задается цвет подсвечивания ссылки при наведении курсором */
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+    .contact > .contact__item:first-child > & {
+      @media screen and (max-width:767px) {
+        font-size: 24px;
+        line-height: 1.17;
+      }
+    }
+
+  @media screen and (min-width:768px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width:1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.contact__icon {
+  // @media screen and (max-width:767px) {
+  //   display: none;
+  // }
+
+  @media screen and (min-width:768px) {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}
+
+// .contact {
+//   display: none;
+// }
