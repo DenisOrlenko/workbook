@@ -1,0 +1,10 @@
+/* применение ЗАГОЛОВКА к однотипным секциям, в которых одинаковый цвет заголовка */
+.section-title {
+  margin-bottom: 30px;
+
+  color: var(--title-text-color);
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
