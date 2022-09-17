@@ -644,6 +644,10 @@ h3 {
 }
 
 /* footer-contacts */
+* {
+  outline: 2px solid tomato;
+}
+
 .address {
   margin-bottom: 20px;
   text-align: center;
@@ -743,6 +747,7 @@ h3 {
 }
 
 .sign-up-label {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
