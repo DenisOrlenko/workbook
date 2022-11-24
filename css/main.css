@@ -1114,10 +1114,6 @@ h3 {
 }
 
 /* footer-contacts */
-* {
-  outline: 2px solid tomato;
-}
-
 .address {
   margin-bottom: 20px;
   text-align: center;
